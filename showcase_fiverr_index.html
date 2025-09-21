@@ -1,0 +1,131 @@
+<!-- Showcase-Fiverr-index.html
+     Página web de escaparate lista para subir (single-file).
+     Instrucciones rápidas: guarda este archivo como index.html.
+     Opciones de hosting (rápido):
+       - GitHub Pages: crea repo, sube index.html en rama main, activa Pages.
+       - Netlify: arrastra y suelta el index.html en https://app.netlify.com/drop
+     Mantener: editar el archivo localmente y volver a subir / push.
+-->
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Escaparate — Servicios en Fiverr</title>
+  <meta name="description" content="Portafolio y servicios profesionales. Encargo en Fiverr: diseño web, landing pages, mantenimiento." />
+  <style>
+    :root{--accent:#0066cc;--bg:#f7f9fb;--card:#ffffff;--muted:#6b7280}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.45;color:#0f1724;background:var(--bg)}
+    .container{max-width:980px;margin:28px auto;padding:24px}
+    header{display:flex;align-items:center;gap:16px}
+    .logo{width:64px;height:64px;background:linear-gradient(135deg,var(--accent),#1fb6ff);border-radius:12px;display:flex;align-items:center;justify-content:center;color:white;font-weight:700;box-shadow:0 6px 18px rgba(2,6,23,.08)}
+    h1{margin:0;font-size:1.6rem}
+    p.lead{margin:6px 0;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:18px}
+    .card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(2,6,23,.04)}
+    .services{display:flex;flex-direction:column;gap:12px}
+    .service{padding:12px;border-radius:10px;border:1px solid #eef2f7}
+    .cta{display:inline-block;margin-top:12px;padding:10px 14px;border-radius:10px;background:var(--accent);color:white;text-decoration:none;font-weight:600}
+    .portfolio{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .tile{height:120px;border-radius:10px;background:linear-gradient(180deg,#eef8ff,#f6fbff);display:flex;flex-direction:column;justify-content:center;padding:12px}
+    footer{margin-top:18px;text-align:center;color:var(--muted);font-size:0.9rem}
+
+    /* responsive */
+    @media (max-width:880px){.grid{grid-template-columns:1fr}.portfolio{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">F</div>
+      <div>
+        <h1>Tu nombre / Agencia — Escaparate para Fiverr</h1>
+        <p class="lead">Landing sencilla y profesional para mostrar tu servicio en Fiverr. Rápida, móvil-friendly y fácil de mantener.</p>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <div class="card">
+          <h2>Servicios destacados</h2>
+          <div class="services">
+            <div class="service">
+              <strong>Diseño de landing rápida</strong>
+              <div style="color:var(--muted);font-size:.95rem">Entrega: 2-4 días. Revisión incluida.</div>
+            </div>
+            <div class="service">
+              <strong>Optimización y mantenimiento</strong>
+              <div style="color:var(--muted);font-size:.95rem">Actualizaciones, backups y solución de errores.</div>
+            </div>
+            <div class="service">
+              <strong>Portafolio y catálogo visual</strong>
+              <div style="color:var(--muted);font-size:.95rem">Muestras, capturas y enlaces reales.</div>
+            </div>
+          </div>
+
+          <a class="cta" href="#contact">Pedir presupuesto</a>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h2>Portafolio (ejemplos)</h2>
+          <div class="portfolio">
+            <div class="tile">Proyecto A<br><small style="color:var(--muted)">Landing para producto</small></div>
+            <div class="tile">Proyecto B<br><small style="color:var(--muted)">Rediseño web</small></div>
+            <div class="tile">Proyecto C<br><small style="color:var(--muted)">Micro-web</small></div>
+            <div class="tile">Proyecto D<br><small style="color:var(--muted)">One-page</small></div>
+          </div>
+        </div>
+
+        <div class="card" id="about" style="margin-top:14px">
+          <h2>Sobre mí / Agencia</h2>
+          <p style="margin:0;color:var(--muted)">Soy [Tu nombre], diseñador y desarrollador. Trabajo con clientes en Fiverr para entregar páginas claras, rápidas y convertidoras.</p>
+        </div>
+
+      </main>
+
+      <aside>
+        <div class="card">
+          <h3>Contacto</h3>
+          <p style="color:var(--muted);margin:6px 0">Reserva, consulta o presupuesto.</p>
+          <p style="margin:6px 0;font-weight:600">Email:</p>
+          <a href="mailto:tu@email.com">tu@email.com</a>
+
+          <hr style="margin:12px 0;border:none;border-top:1px solid #f1f5f9">
+
+          <h4>Detalles rápidos</h4>
+          <ul style="margin:8px 0 0 18px;color:var(--muted)">
+            <li>Tiempo entrega: 2–5 días</li>
+            <li>Revisiones: 2</li>
+            <li>Precio: personalizable</li>
+          </ul>
+
+          <a class="cta" href="#contact" style="display:block;text-align:center;margin-top:12px">Contactar</a>
+        </div>
+
+        <div class="card" style="margin-top:12px;text-align:center">
+          <h4>Cómo ver mi trabajo en Fiverr</h4>
+          <p style="color:var(--muted);font-size:.95rem">Incluye este enlace en tu descripción de gig: <br><code style="font-size:.9rem">https://tudominio.com</code></p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="card" style="margin-top:16px" id="contact">
+      <h3>Formulario de contacto (simple)</h3>
+      <p style="color:var(--muted);margin:6px 0">Al pulsar "Enviar" se abrirá tu cliente de correo para enviar la petición.</p>
+      <form onsubmit="event.preventDefault(); location.href='mailto:tu@email.com?subject='+encodeURIComponent(document.getElementById('asunto').value)+'&body='+encodeURIComponent(document.getElementById('mensaje').value)">
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <input id="asunto" placeholder="Asunto" style="padding:10px;border-radius:8px;border:1px solid #e6eef8">
+          <textarea id="mensaje" placeholder="Mensaje breve" rows="4" style="padding:10px;border-radius:8px;border:1px solid #e6eef8"></textarea>
+          <button style="padding:10px;border-radius:10px;border:0;background:var(--accent);color:white;font-weight:600">Enviar</button>
+        </div>
+      </form>
+    </div>
+
+    <footer>
+      © "Tu nombre" — Muestra profesional para Fiverr · Archivo único: index.html
+    </footer>
+  </div>
+</body>
+</html>
